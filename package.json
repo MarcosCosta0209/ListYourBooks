@@ -1,0 +1,19 @@
+{
+  "name": "listyourbooks",
+  "version": "1.0.0",
+  "description": "A small web app to keep track of the books you want to read, are reading and have finished.",
+  "author": "Marcos Eduardo da Costa",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MarcosCosta0209/ListYourBooks.git"
+  },
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "license": "MIT"
+}
