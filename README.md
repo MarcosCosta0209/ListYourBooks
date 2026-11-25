@@ -25,13 +25,13 @@ No API key or account is needed.
 
 ## Screenshots
 
-Desktop view (search results and saved list):
+Desktop view (search for "Harry Potter"):
 
-![Desktop view](docs/screenshots/desktop_search.png)
+![Desktop view](docs/screenshots/desktop.png)
 
-Phone view (search and list filtered by "Finished"):
+Phone view (same search):
 
-<img src="docs/screenshots/mobile_search.png" width="260" alt="Phone view of the search"> <img src="docs/screenshots/mobile_list.png" width="260" alt="Phone view of the list">
+<img src="docs/screenshots/phone.png" width="300" alt="Phone view of the search">
 
 ## Technologies
 
