@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ListYourBooks</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="top">
+    <h1>ListYourBooks</h1>
+    <p>Find books, save them, and keep track of what you've read.</p>
+  </header>
+
+  <main>
+    <!-- Search part: results come from Open Library via my backend -->
+    <section class="panel">
+      <h2>Find a book</h2>
+      <form id="search-form" class="search">
+        <input id="search-input" type="search" placeholder="Title or author, e.g. The Hobbit" required>
+        <button type="submit">Search</button>
+      </form>
+      <p id="search-message" class="message"></p>
+      <div id="results" class="grid"></div>
+    </section>
+
+    <!-- The saved list -->
+    <section class="panel">
+      <div class="list-head">
+        <h2>My books</h2>
+        <span id="counter" class="counter"></span>
+      </div>
+
+      <div id="filters" class="filters">
+        <button class="filter active" data-status="">All</button>
+        <button class="filter" data-status="Want to read">Want to read</button>
+        <button class="filter" data-status="Reading">Reading</button>
+        <button class="filter" data-status="Finished">Finished</button>
+      </div>
+
+      <p id="list-message" class="message"></p>
+      <div id="my-books" class="grid"></div>
+    </section>
+  </main>
+
+  <footer>Book data and covers from <a href="https://openlibrary.org" target="_blank" rel="noopener">Open Library</a></footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
