@@ -23,6 +23,16 @@ No API key or account is needed.
 - Filter the list by status, remove books
 - Responsive layout (1 column on phones, 2 on tablets, 3 on desktop)
 
+## Screenshots
+
+Desktop view (search results and saved list):
+
+![Desktop view](docs/screenshots/desktop_search.png)
+
+Phone view (search and list filtered by "Finished"):
+
+<img src="docs/screenshots/mobile_search.png" width="260" alt="Phone view of the search"> <img src="docs/screenshots/mobile_list.png" width="260" alt="Phone view of the list">
+
 ## Technologies
 
 | Part | Technology | Why |
@@ -33,7 +43,9 @@ No API key or account is needed.
 | External API | Open Library Search API | Free, no key, large book catalogue |
 | Tests | Node's built-in test runner (`node:test`) | Works out of the box |
 
-The project has **no npm dependencies**, so there is nothing to install apart from Node.js.
+In the concept phase I planned Express and SQLite. During development I switched to
+the built-in `http` module and a JSON file, because the app only has five routes and
+one user. That way the project has **no npm dependencies**, and nothing has to be installed apart from Node.js.
 
 ## Installation and running
 
